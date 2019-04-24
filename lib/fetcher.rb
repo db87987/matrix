@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'zip'
+require_relative 'request_common'
+
 # Gets data from sources
 class Fetcher
   include RequestCommon
@@ -8,13 +11,15 @@ class Fetcher
     @source = source
   end
 
-  def url
-    "#{BASE_URL}?passphrase=#{PASSPHRASE}&source=#{@source}"
-  end
-
   def fetch
     http = Curl.get(url)
     unzip(http.body_str)
+  end
+
+  private
+
+  def url
+    "#{BASE_URL}?passphrase=#{PASSPHRASE}&source=#{@source}"
   end
 
   def unzip(response)

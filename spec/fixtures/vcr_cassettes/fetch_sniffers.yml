@@ -1,0 +1,27 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://challenge.distribusion.com/the_one/routes?passphrase=Kans4s-i$-g01ng-by3-bye&source=sniffers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/zip
+      Content-Disposition:
+      - attachment; filename*=UTF-8''sniffers
+      Content-Length:
+      - '856'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        UEsDBAoAAAAAADeQY0kAAAAAAAAAAAAAAAAJABAAc25pZmZlcnMvVVgMAIdtHFh6bRtY9QEUAFBLAwQUAAgACACTYWRJAAAAAAAAAAAAAAAAFwAQAHNuaWZmZXJzL25vZGVfdGltZXMuY3N2VVgMACZtHFglbRxY9QEUAFWMQQ7DMAgE731FxTkHu+1/EA0oQrJxZOP/p1wq58TujBawxoKuVVAZticMp+4YNJoY/zPPTq7NUA2rlqJD9mY84AE5fKH6ZYrkNOPklNJPvhZ0Dl3Me0GtykGL+9xf3oYXUEsHCKq1ysBiAAAAtQAAAFBLAwQUAAgACAAPkGNJAAAAAAAAAAAAAAAAEwAQAHNuaWZmZXJzL3JvdXRlcy5jc3ZVWAwAIHAbWC5tG1j1ARQAUyrKLy1Jjc9MUdJRUCrJzE2F0fFV+XmpSlxKhiABIwNjA11DI11jwxBDYysDAysDM5BwaIjzoY0gngFQoRF2heYYCo2xKzRAVwgAUEsHCLCWqgdLAAAAmwAAAFBLAwQUAAgACACaYWRJAAAAAAAAAAAAAAAAFgAQAHNuaWZmZXJzL3NlcXVlbmNlcy5jc3ZVWAwANG0cWDNtHFj1ARQAUyrKLy1Jjc9MUdJRUMrLT0mNL8nMBfO5lAxBYoYwhhGMYQxkGIEYJjAGSMQYxLBU4gIAUEsHCAV/zV4zAAAAUQAAAFBLAQIVAwoAAAAAADeQY0kAAAAAAAAAAAAAAAAJAAwAAAAAAAAAAEDtQQAAAABzbmlmZmVycy9VWAgAh20cWHptG1hQSwECFQMUAAgACACTYWRJqrXKwGIAAAC1AAAAFwAMAAAAAAAAAABApIE3AAAAc25pZmZlcnMvbm9kZV90aW1lcy5jc3ZVWAgAJm0cWCVtHFhQSwECFQMUAAgACAAPkGNJsJaqB0sAAACbAAAAEwAMAAAAAAAAAABApIHuAAAAc25pZmZlcnMvcm91dGVzLmNzdlVYCAAgcBtYLm0bWFBLAQIVAxQACAAIAJphZEkFf81eMwAAAFEAAAAWAAwAAAAAAAAAAECkgYoBAABzbmlmZmVycy9zZXF1ZW5jZXMuY3N2VVgIADRtHFgzbRxYUEsFBgAAAAAEAAQAMQEAABECAAAAAA==
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 07:43:09 GMT
+recorded_with: VCR 4.0.0

@@ -14,6 +14,8 @@ class LoopholesParser < Parser
     end
   end
 
+  private
+
   def node_pairs
     JSON.parse(data[NODE_PAIRS]).values.flatten!
   end
@@ -23,6 +25,6 @@ class LoopholesParser < Parser
   end
 
   def source
-    'loopholes'
+    :loopholes
   end
 end

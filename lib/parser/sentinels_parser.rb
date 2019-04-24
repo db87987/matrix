@@ -15,11 +15,13 @@ class SentinelsParser < Parser
     end
   end
 
-  def source
-    'sentinels'
-  end
+  private
 
   def routes
     decode_csv(data[ROUTES])
+  end
+
+  def source
+    :sentinels
   end
 end

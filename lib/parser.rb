@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'csv'
+require 'active_support/all'
+
 # Base class of sources parsers
 class Parser
   attr_reader :data
@@ -7,6 +10,8 @@ class Parser
   def initialize(data:)
     @data = data
   end
+
+  private
 
   def decode_csv(csv_string)
     csv_string.delete!('"')

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 task :find_the_one do
-  ruby "matrix.rb"
+  ruby 'lib/matrix.rb'
 end

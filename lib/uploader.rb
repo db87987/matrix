@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'request_common'
+
 # Upload parsed data to server
 class Uploader
   include RequestCommon

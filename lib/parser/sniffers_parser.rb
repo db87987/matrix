@@ -18,6 +18,8 @@ class SniffersParser < Parser
     end
   end
 
+  private
+
   def route_id_by_node_id(node_time_id)
     route_match = sequences.find do |element|
       element['node_time_id'] == node_time_id
@@ -40,10 +42,10 @@ class SniffersParser < Parser
   def time_with_offset(start_time:, duration:)
     duration_in_seconds = duration.to_i / 1000
     end_time = Time.parse(start_time) + duration_in_seconds
-    end_time.strftime('%Y-%m-%dT%H:%M:%S')
+    formatted_time(end_time)
   end
 
   def source
-    'sniffers'
+    :sniffers
   end
 end
