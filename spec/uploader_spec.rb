@@ -19,13 +19,13 @@ describe Uploader do
       passphrase: 'Kans4s-i$-g01ng-by3-bye'
     }
   end
-
-  before do
+  let!(:stub) do
     stub_request(:post, 'https://challenge.distribusion.com/the_one/routes')
       .with(body: request_body)
   end
 
   it 'uploads data' do
     subject.upload(data: data)
+    expect(stub).to have_been_requested
   end
 end
