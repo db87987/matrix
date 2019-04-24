@@ -23,7 +23,7 @@ class LoopholesParser < Parser
   end
 
   def routes
-    JSON.parse(data[ROUTES]).values.flatten!
+    @routes ||= JSON.parse(data[ROUTES]).values.flatten!
   end
 
   def source

@@ -30,11 +30,11 @@ class SniffersParser < Parser
   end
 
   def routes
-    decode_csv(data[ROUTES])
+    @routes ||= decode_csv(data[ROUTES])
   end
 
   def sequences
-    decode_csv(data[SEQUENCES])
+    @sequences ||= decode_csv(data[SEQUENCES])
   end
 
   def node_times
