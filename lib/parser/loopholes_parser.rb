@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative '../parser'
+
 # Parses data from loopholes
 class LoopholesParser < Parser
   NODE_PAIRS = 'loopholes/node_pairs.json'

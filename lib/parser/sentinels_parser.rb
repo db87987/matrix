@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative '../parser'
+
 # Parses data from sentinels
 class SentinelsParser < Parser
   ROUTES = 'sentinels/routes.csv'

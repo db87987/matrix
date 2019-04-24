@@ -2,7 +2,6 @@
 
 require_relative 'fetcher'
 require_relative 'uploader'
-require_relative 'parser'
 require_relative 'parser/sniffers_parser'
 require_relative 'parser/sentinels_parser'
 require_relative 'parser/loopholes_parser'

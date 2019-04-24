@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative '../parser'
+
 # Parses data from sniffers
 class SniffersParser < Parser
   NODE_TIMES = 'sniffers/node_times.csv'
