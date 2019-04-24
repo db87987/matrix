@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'parser/sentinels_parser'
 require 'pry'
 
